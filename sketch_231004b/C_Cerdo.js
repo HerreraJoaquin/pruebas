@@ -23,7 +23,7 @@ class Cerdo {
   dibujar() {
    translate(this.x, this.y);
    fill(237,151,223);
-   rect(0,0,this.tam,this.tam);
+   ellipse(0,0,this.tam,this.tam);
   }
   
   desacelera() {
