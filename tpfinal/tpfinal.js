@@ -34,7 +34,7 @@ function draw() {
 
 function centerCanvas() {
   var x = (windowWidth - width) / 2 ;
-  var y = (windowHeight - height) / 2;
+  var y = (windowHeight - height) / 2+100;
   cnv.position(x, y);
 }
 
