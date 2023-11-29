@@ -1,13 +1,13 @@
 let ag;
 let botones = [];
 let juego;
-var cnv;
+
 
 
 
 function setup() {
-  cnv = createCanvas(400, 400);
-  centerCanvas();
+  var canvas = createCanvas(400, 400);
+  canvas.parent('ventana');
   ag = new AventuraGrafica();
   crearBotones(ag.cantPantallas);
   juego = new Juego();
@@ -32,15 +32,7 @@ function draw() {
   }
 }
 
-function centerCanvas() {
-  var x = (windowWidth - width) / 2 ;
-  var y = (windowHeight - height) / 2+50;
-  cnv.position(x, y);
-}
 
-function windowResized() {
-  centerCanvas();
-}
 
 function crearBotones(cantidad) {
   botones = [];
